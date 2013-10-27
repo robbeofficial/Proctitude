@@ -36,6 +36,7 @@
 ehthumbs.db
 Thumbs.db
 
-# location logs #
-#################
+# location logs and generated data #
+####################################
 data/LocationHistory.json
+flow-*.png
