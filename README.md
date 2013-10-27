@@ -7,7 +7,7 @@ Example
 =======
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=6eFkrLaAFFo
-" target="_blank"><img src="http://img.youtube.com/vi/6eFkrLaAFFo/0.jpg" width="720" height="405" border="10" /></a>
+" target="_blank"><img src="http://img.youtube.com/vi/6eFkrLaAFFo/0.jpg" width="640" height="480" border="10" /></a>
 
 Usage
 =====
