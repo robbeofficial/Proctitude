@@ -1,3 +1,4 @@
+// load homography matrix from CSV
 float[] loadHomography(String fname) {
   Table table = loadTable(fname);
   float[] h = new float[9];
@@ -7,6 +8,18 @@ float[] loadHomography(String fname) {
     }  
   }
   return h;
+}
+
+// load calibration coords from csv
+double[][] loadCoords(String fname) {
+  Table table = loadTable(fname);
+  double[][] coords = new double[4][2];
+  for (int row=0; row<4; row++) {
+    for (int col=0; col<2; col++) {
+      coords[row][col] = table.getRow(row).getFloat(col);
+    }  
+  }
+  return coords;
 }
 
 List<Location> loadLocations(String fname) {

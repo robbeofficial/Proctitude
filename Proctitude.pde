@@ -2,6 +2,8 @@
 
 import java.util.*;
 
+String view = "data/view1/";
+
 List<Location> locations;
 float[] homography;
 PImage map;
@@ -32,9 +34,17 @@ void setup() {
   strokeWeight(2);
   
   println("loading ...");
-  locations = loadLocations("data/LocationHistory.json");
-  homography = loadHomography("data/view1/homography.csv");
-  map = loadImage("data/view1/clean.png");
+  locations = loadLocations("data/LocationHistory.json");  
+  
+  // load view
+  double[][] calibGeo = loadCoords(view + "/calib-geo.csv");
+  double[][] calibPixel = loadCoords(view + "/calib-pixel.csv");
+  map = loadImage(view + "/map.png");
+  
+  // determine homography (calibration)
+  homography = homest(calibGeo, calibPixel);
+  //homography = loadHomography("data/view1/homography.csv");
+  
   particle = gauss(64,64);
   
   println("sorting ...");
