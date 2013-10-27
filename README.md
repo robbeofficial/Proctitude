@@ -6,8 +6,8 @@ Generates nice videos from Google's Location History data by combining Processin
 Example
 =======
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=eFkrLaAFFo
-" target="_blank"><img src="http://img.youtube.com/vi/eFkrLaAFFo/0.jpg" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6eFkrLaAFFo
+" target="_blank"><img src="http://img.youtube.com/vi/6eFkrLaAFFo/0.jpg" width="720" height="405" border="10" /></a>
 
 Usage
 =====
@@ -19,7 +19,7 @@ Usage
 5. Open the exported image that includes the placemarks in an image editor and extract the pixel coordinates of the placemarkers. Save them to data/view\*/calib-pixel.csv in **the same order** that you used for the geographic coordinates.
 6. Adjust the view varibale in Proctitude.pde
 7. Run in [Processing](http://processing.org/)!
-8. Convert the image sequence to a vidoe file using
+8. Convert the image sequence to a video file using
 ```bash
 avconv -i flow-%06d.png -b 8000k flow.avi
 ```
