@@ -3,8 +3,8 @@ Proctitude
 
 Generates nice videos from Google's Location History data by combining Processing and Latitude (now called Location History). 
 
-Example
-=======
+Example Video
+=============
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=6eFkrLaAFFo
 " target="_blank"><img src="http://img.youtube.com/vi/6eFkrLaAFFo/0.jpg" width="640" height="480" border="10" /></a>
@@ -24,6 +24,8 @@ Usage
 avconv -i flow-%06d.png -b 8000k flow.avi
 ```
 
-Details: http://www.rwalter.de/hundreds-of-mes/
+Details
+=======
+Visit http://www.rwalter.de/hundreds-of-mes/
 
 
